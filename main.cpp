@@ -4,12 +4,15 @@
 #include <iostream>
 #include "enums.h"
 #include "math.h"
-#include "input.h"
-
 
 int main() {
-    switch (input()) {
-        case figures::RACTANGLE:
+    std::cout << "1-Прямоугольник" << std::endl << "2-Треугольник" << std::endl << "3-Окружность" << std::endl;
+
+    int input;
+    std::cin >> input;
+
+    switch (input) {
+        case figures::RECTANGLE:
             std::cout << "прямоугольник";
             break;
         case figures::TRIANGLE:
@@ -18,5 +21,7 @@ int main() {
         case figures::CIRCLE:
             //circle();
             break;
+        default:
+            std::cout << "Ошибка нужны цифры от 1 до 3" << std::endl;
     }
 }

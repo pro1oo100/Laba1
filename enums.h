@@ -4,7 +4,7 @@
 #pragma once
 
 enum figures {
-    RACTANGLE,
+    RECTANGLE = 1,
     TRIANGLE,
     CIRCLE,
 };
