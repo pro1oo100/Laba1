@@ -7,5 +7,4 @@ enum figures {
     RECTANGLE = 1,
     TRIANGLE,
     CIRCLE,
-    TRAPEZOID,
 };

@@ -5,28 +5,25 @@
 #include "enums.h"
 #include "math.h"
 #include "circle.h"
-#include "rectangle.h"
+#include "ractangle.h"
 
 int main() {
     std::cout << "1-Прямоугольник" << std::endl
     << "2-Треугольник" << std::endl
-    << "3-Окружность" << std::endl
-    << "4-Трапеция" << std::endl;
+    << "3-Окружность" << std::endl;
 
     int input;
     std::cin >> input;
 
     switch (input) {
         case figures::RECTANGLE:
-            rectangle();
+            ractangle();
             break;
         case figures::TRIANGLE:
             math::testTriangle();
             break;
         case figures::CIRCLE:
             circle();
-            break;
-        case figures::TRAPEZOID:
             break;
         default:
             std::cout << "Ошибка нужны цифры от 1 до 4" << std::endl;
