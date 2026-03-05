@@ -72,11 +72,13 @@ project/
 #include <iostream>
 #include "enums.h"
 #include "math.h"
+#include "circle.h"
 
 int main() {
     std::cout << "1-Прямоугольник" << std::endl
               << "2-Треугольник" << std::endl
-              << "3-Окружность" << std::endl;
+              << "3-Окружность" << std::endl
+              << "4-Трапеция" << std::endl;
 
     int input;
     std::cin >> input;
@@ -91,7 +93,7 @@ int main() {
             break;
 
         case figures::CIRCLE:
-            //circle();
+            circle();
             break;
 
         default:
@@ -130,7 +132,6 @@ return (a == b) || (a == c) || (b == c);
 - площадь кругового сектора
 
 ```cpp
-double Triangle::Perimeter() const {
 void circle() {
     double radius = 0;
     int corner = 0;
