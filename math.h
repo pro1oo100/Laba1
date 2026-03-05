@@ -2,8 +2,7 @@
 // Created by Александр Добринов on 05.03.2026.
 //
 
-#ifndef LABA1_MATH_H
-#define LABA1_MATH_H
+#pragma once
 #include <iostream>
 
 namespace math {
@@ -25,6 +24,6 @@ namespace math {
             }
         }
     };
-}; // mat
 
-#endif //LABA1_MATH_H
+    void testTriangle();
+}; // mat

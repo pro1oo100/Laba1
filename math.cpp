@@ -24,4 +24,18 @@ namespace math {
         << " b=" << this->b << " c=" << this->c << std::endl;
     }
 
+    void testTriangle() {
+        double a, b, c;
+
+        std::cout << "Введите стороны: ";
+        std::cin >> a >> b >> c;
+
+        math::Triangle triangle(a, b, c);
+
+        triangle.print();
+
+        std::cout << "Пермитер: " << triangle.Perimeter() << std::endl;
+        std::cout << "Площадь (Формула герона): " << triangle.Area() << std::endl;
+        std::cout << "Проверка на равнобедренность: " << triangle.IsEqualSized() << std::endl;
+    }
 } // math
