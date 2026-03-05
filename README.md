@@ -205,12 +205,12 @@ git commit -m "Добавлена реализация треугольника"
 
 ## Отправка на GitHub
 ```
-git commit -m "git push origin triangle"
+git push origin triangle
 ```
 
 ## Слияние веток
 ```
-git commit -m "git merge triangle"
+git merge triangle
 ```
 
 ## Получение изменений
