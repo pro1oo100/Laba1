@@ -7,7 +7,10 @@
 #include "circle.h"
 
 int main() {
-    std::cout << "1-Прямоугольник" << std::endl << "2-Треугольник" << std::endl << "3-Окружность" << std::endl;
+    std::cout << "1-Прямоугольник" << std::endl
+    << "2-Треугольник" << std::endl
+    << "3-Окружность" << std::endl
+    << "4-Трапеция" << std::endl;
 
     int input;
     std::cin >> input;
@@ -22,7 +25,9 @@ int main() {
         case figures::CIRCLE:
             circle();
             break;
+        case figures::TRAPEZOID:
+            break;
         default:
-            std::cout << "Ошибка нужны цифры от 1 до 3" << std::endl;
+            std::cout << "Ошибка нужны цифры от 1 до 4" << std::endl;
     }
 }

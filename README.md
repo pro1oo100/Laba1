@@ -69,16 +69,11 @@ project/
 ## main.cpp
 
 ```cpp
-#include <iostream>
-#include "enums.h"
-#include "math.h"
-#include "circle.h"
-
 int main() {
     std::cout << "1-Прямоугольник" << std::endl
-              << "2-Треугольник" << std::endl
-              << "3-Окружность" << std::endl
-              << "4-Трапеция" << std::endl;
+    << "2-Треугольник" << std::endl
+    << "3-Окружность" << std::endl
+    << "4-Трапеция" << std::endl;
 
     int input;
     std::cin >> input;
@@ -87,17 +82,16 @@ int main() {
         case figures::RECTANGLE:
             std::cout << "прямоугольник";
             break;
-
         case figures::TRIANGLE:
             math::testTriangle();
             break;
-
         case figures::CIRCLE:
             circle();
             break;
-
+        case figures::TRAPEZOID:
+            break;
         default:
-            std::cout << "Ошибка нужны цифры от 1 до 3" << std::endl;
+            std::cout << "Ошибка нужны цифры от 1 до 4" << std::endl;
     }
 }
 ```
@@ -191,7 +185,7 @@ git clone https://github.com/pro1oo100/Laba1
 
 ## Создание ветки
 ```
-git checkout -b triangle
+git checkout -b Alexander
 ```
 
 ## Добавление файлов
@@ -206,7 +200,7 @@ git commit -m "Добавлена реализация треугольника"
 
 ## Отправка на GitHub
 ```
-git push origin triangle
+git push origin Alexander
 ```
 
 ## Слияние веток
