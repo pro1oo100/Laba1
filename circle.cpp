@@ -1,5 +1,6 @@
 #include <iostream>
-#include <circle.h>
+#include "circle.h"
+
 void circle() {
     double radius = 0;
     int corner = 0;
@@ -20,4 +21,3 @@ void circle() {
         std::cout << "Ошибка радиус больше 0 и угол от 0 градусов" << std::endl;
     }
 }
-~

@@ -4,6 +4,7 @@
 #include <iostream>
 #include "enums.h"
 #include "math.h"
+#include "circle.h"
 
 int main() {
     std::cout << "1-Прямоугольник" << std::endl << "2-Треугольник" << std::endl << "3-Окружность" << std::endl;
@@ -19,7 +20,7 @@ int main() {
             math::testTriangle();
             break;
         case figures::CIRCLE:
-            //circle();
+            circle();
             break;
         default:
             std::cout << "Ошибка нужны цифры от 1 до 3" << std::endl;
