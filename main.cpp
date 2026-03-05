@@ -5,6 +5,7 @@
 #include "enums.h"
 #include "math.h"
 #include "circle.h"
+#include "rectangle.h"
 
 int main() {
     std::cout << "1-Прямоугольник" << std::endl
@@ -17,7 +18,7 @@ int main() {
 
     switch (input) {
         case figures::RECTANGLE:
-            std::cout << "прямоугольник";
+            rectangle();
             break;
         case figures::TRIANGLE:
             math::testTriangle();

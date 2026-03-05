@@ -37,9 +37,10 @@
 Программа написана на языке **C++** и позволяет пользователю выбрать геометрическую фигуру и выполнить вычисление её параметров.
 
 После запуска программы пользователь выбирает фигуру из списка:
-- 1 - треугольник
+- 1 - Прямоугольник
 - 2 - Треугольник
 - 3 - Окружность
+- 4 - Трапеция
 
 После этого вводятся необходимые данные, и программа выводит результат вычислений.
 
@@ -58,6 +59,9 @@ project/
 │
 ├── circle.h
 ├── circle.cpp
+│
+├── ractangle.h
+├── ractangle.cpp
 │
 └── README.md
 ```
@@ -80,7 +84,7 @@ int main() {
 
     switch (input) {
         case figures::RECTANGLE:
-            std::cout << "прямоугольник";
+            ractangle();
             break;
         case figures::TRIANGLE:
             math::testTriangle();
@@ -118,6 +122,37 @@ bool Triangle::IsEqualSized() const {
 return (a == b) || (a == c) || (b == c);
 }
 ```
+
+
+# Реализация прямоугольника (Комаров)
+Функции:
+- периметр
+- площадь
+- диагональ
+
+```cpp
+void ractangle(){
+    double length = 0, width  = 0;
+
+
+    std::cout << "Длина и ширина прямоугольника" << std::endl;
+    if ((std::cin >> length && length > 0) &&
+    (std::cin >> width && width > -1)) {
+        std::cout << std::fixed << std::setprecision(2) << "Периметр = "
+                  << 2 * (length + width) << std::endl;
+
+        std::cout << std::fixed << std::setprecision(2) << "Площадь = "
+                  << length * width << std::endl;
+
+        std::cout << std::fixed << std::setprecision(2) << "Диагональ = "
+                  <<sqrt(length * length + width * width) << std::endl;
+    }
+    else {
+        std::cout << "Ошибка, сторона должна быть > 0" << std::endl;
+    }
+}
+```
+
 
 # Реализация окружности (Сафонов)
 Функции:
@@ -160,6 +195,7 @@ void circle() {
 1-Прямоугольник
 2-Треугольник
 3-Окружность
+4-Трапеция
 
 2
 
@@ -205,7 +241,7 @@ git push origin Alexander
 
 ## Слияние веток
 ```
-git merge triangle
+git merge Alexander
 ```
 
 ## Получение изменений
